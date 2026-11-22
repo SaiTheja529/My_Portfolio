@@ -1,6 +1,6 @@
 {
-  "name": "space-portfolio",
-  "version": "1.0.1",
+  "name": "sai-theja-portfolio",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,62 +9,31 @@
     "lint": "eslint ."
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhyyy@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Sai Theja Papisetty",
+    "url": "https://github.com/SaiTheja529"
   },
-  "description": "Welcome to my full stack Next.js 14 space portfolio.",
+  "description": "Sai Theja Papisetty's 3D portfolio — Next.js, Three.js and Framer Motion.",
   "keywords": [
-    "reactjs",
-    "nextjs",
-    "vercel",
-    "react",
-    "space-portfolio",
     "portfolio",
-    "react-icons",
-    "cn",
-    "clsx",
     "3d-portfolio",
-    "3d-website",
-    "sonner",
+    "nextjs",
+    "react",
+    "threejs",
+    "react-three-fiber",
     "framer-motion",
-    "motion",
-    "animation",
-    "heroicons",
-    "next-themes",
-    "postcss",
-    "prettier",
-    "react-dom",
     "tailwindcss",
-    "tailwindcss-animate",
-    "ui/ux",
-    "js",
-    "javascript",
     "typescript",
-    "eslint",
-    "html",
-    "css"
+    "agentic-ai"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/space-portfolioit"
+    "url": "https://github.com/SaiTheja529/My_Portfolio.git"
   },
-  "homepage": "https://github.com/sanidhyy/space-portfolio#readme",
+  "homepage": "https://github.com/SaiTheja529/My_Portfolio#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/space-portfolio/issues",
-    "email": "sanidhyyy@gmail.com"
+    "url": "https://github.com/SaiTheja529/My_Portfolio/issues"
   },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ],
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@react-three/drei": "^10.7.9",

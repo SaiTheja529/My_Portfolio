@@ -1,194 +1,122 @@
-<a name="readme-top"></a>
+<div align="center">
 
-# Modern Space Theme Portfolio using Next.js 14 and Three.js
+# Sai Theja Papisetty — 3D Portfolio
 
-![Modern Space Theme Portfolio using Next.js 14 and Three.js](/.github/images/img_main.png "Modern Space Theme Portfolio using Next.js 14 and Three.js")
+**Agentic AI Engineer · Infosys Exponential Team**
 
-[![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy "Ask Me Anything!")
-[![GitHub license](https://flat.badgen.net/github/license/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/blob/main/LICENSE "GitHub license")
-[![Maintenance](https://flat.badgen.net/static/Maintained/yes?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/commits/main "Maintenance")
-[![GitHub branches](https://flat.badgen.net/github/branches/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/branches "GitHub branches")
-[![Github commits](https://flat.badgen.net/github/commits/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/commits "Github commits")
-[![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/issues "GitHub issues")
-[![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/space-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/space-portfolio/pulls "GitHub pull requests")
-[![Netlify Status](https://api.netlify.com/api/v1/badges/451ed0e0-3541-474e-896a-4987e30a7722/deploy-status)](https://spaceportfolio.netlify.app/ "Netlify Status")
+A space-themed, interactive 3D portfolio built with Next.js, React Three Fiber and Framer Motion —
+with case-study pages, a 3D contact scene, and an explainer on Devin × Claude Code × GitHub Copilot.
 
-<!-- Table of Contents -->
-<details>
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-R3F-black?logo=threedotjs)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-06B6D4?logo=tailwindcss&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-<summary>
+![Home](.github/images/home.jpg)
 
-# :notebook_with_decorative_cover: Table of Contents
+</div>
 
-</summary>
+## ✨ What's inside
 
-- [Folder Structure](#bangbang-folder-structure)
-- [Getting Started](#toolbox-getting-started)
-- [Screenshots](#camera-screenshots)
-- [Tech Stack](#gear-tech-stack)
-- [Stats](#wrench-stats)
-- [Contribute](#raised_hands-contribute)
-- [Acknowledgements](#gem-acknowledgements)
-- [Buy Me a Coffee](#coffee-buy-me-a-coffee)
-- [Follow Me](#rocket-follow-me)
-- [Learn More](#books-learn-more)
-- [Deploy on Vercel](#page_with_curl-deploy-on-vercel)
-- [Give A Star](#star-give-a-star)
-- [Star History](#star2-star-history)
-- [Give A Star](#star-give-a-star)
+- **Hero, About & Skills** — a black-hole video hero, an About section with my Infosys background, and skills grouped by Agentic AI, GenAI & RAG, backend, microservices, security, DevOps and frontend.
+- **Four project case studies**, each with its own interactive 3D centrepiece:
+  | Project | 3D highlight |
+  | --- | --- |
+  | **DevCommons** — community platform for developers building with AI coding agents | 3D "virtual city" scene, tilting screenshots, lightbox gallery |
+  | **Effort Analyzer** — fair, hybrid (deterministic + AI) engineering-effort scoring | 3D model of signals + AI evaluation feeding one score |
+  | **UnitedAir AI** — Agentic RAG airline assistant, grounded answers only | Exploded 3D architecture stack, grounded-answer decision flow, 4-layer RBAC |
+  | **ShiftTrack** — hospital nurse-shift system on Spring Boot microservices | Interactive 3D microservices explorer with live request pulses |
+- **Devin × Claude Code × GitHub Copilot** (`/devin`) — what makes Devin different and what you can do by combining the three, summarised from the official docs with links. Features a rotating 3D prism and a coverflow "relay".
+- **3D Contact section** — an envelope that opens as you scroll in and a ringing phone; click to email via Gmail or call.
+- **Launchpad footer** — perspective grid floor, a 3D name, and a rocket back-to-top button.
 
-</details>
+![ShiftTrack 3D architecture explorer](.github/images/shifttrack.jpg)
 
-## :bangbang: Folder Structure
+![Devin page](.github/images/devin.jpg)
 
-Here is the folder structure of this app.
+![Contact section](.github/images/contact.jpg)
 
-<!--- FOLDER_STRUCTURE_START --->
+## 🧰 Tech stack
+
+- **Framework:** Next.js 16 (App Router), React 19, TypeScript
+- **3D & motion:** three.js, @react-three/fiber, @react-three/drei, maath, Framer Motion, CSS 3D transforms
+- **Styling:** Tailwind CSS 3
+- **Icons:** react-icons, Heroicons
+- **Tooling:** pnpm, ESLint
+- **Hosting:** Vercel
+
+## 🚀 Getting started
+
+Requires **Node.js 20.9+** and **pnpm**.
+
 ```bash
-space-portfolio/
-  |- app/
-    |-- apple-icon.png
-    |-- favicon.ico
-    |-- globals.css
-    |-- icon1.png
-    |-- icon2.png
-    |-- layout.tsx
-    |-- page.tsx
-  |- components/
-    |-- main/
-    |-- sub/
-  |- config/
-    |-- index.ts
-  |- constants/
-    |-- index.ts
-  |- lib/
-    |-- motion.ts
-    |-- utils.ts
-  |- public/
-  |- .eslintrc.json
-  |- .gitignore
-  |- eslint.config.mjs
-  |- netlify.toml
-  |- next.config.js
-  |- package.json
-  |- pnpm-lock.yaml
-  |- pnpm-workspace.yaml
-  |- postcss.config.js
-  |- tailwind.config.ts
-  |- tsconfig.json
+# install pnpm if you don't have it
+npm i -g pnpm
+
+# install dependencies
+pnpm install
+
+# start the dev server → http://localhost:3000
+pnpm dev
 ```
-<!--- FOLDER_STRUCTURE_END --->
 
-<br />
+> Use **pnpm** rather than npm: `package.json` pins `@types/react` through `overrides`, which npm rejects.
 
-## :toolbox: Getting Started
+Other scripts:
 
-1. Make sure **Git** and **NodeJS** is installed.
+```bash
+pnpm lint    # ESLint
+pnpm build   # production build
+pnpm start   # serve the production build
+```
 
-2. Clone this repository to your local computer.
+## 🗂️ Project structure
 
-3. Open terminal in root directory. Run `npm install` or `pnpm install`.
+```
+app/                    Routes: / , /devin , /projects/[slug]
+components/
+  main/                 Page sections (hero, about, skills, projects, contact, footer, …)
+  sub/                  Building blocks (TiltCard, 3D scenes, showcases, cards)
+constants/
+  index.ts              PROFILE, skills, projects, architecture layers
+  devin.ts              Content + doc links for the /devin page
+config/                 Site metadata
+public/                 Videos, skill icons, avatar, project screenshots
+```
 
-4. Now app is fully configured 👍 and you can start using this app using `npm run dev` or `pnpm dev`.
+## 🛠️ Make it yours
 
-### :raising_hand: Need Help?
+- **Your details** — edit the `PROFILE` block at the top of `constants/index.ts` (name, role, bio, email, phone, social links). Anything left as `""` is simply hidden.
+- **Projects** — add an entry to `PROJECTS` in `constants/index.ts`. It automatically gets a card on the home page and a detail page at `/projects/<slug>`. Projects can have a screenshot, links, stats, features and an optional bespoke 3D showcase.
+- **Skills** — edit `SKILL_GROUPS` in `constants/index.ts`.
+- **Avatar** — replace `public/profile-avatar.jpg`.
 
-If you run into issues during installation or setup:
+## ☁️ Deploy
 
-- **GitHub Discussions** — [Open a Q&A discussion](https://github.com/sanidhyy/space-portfolio/discussions/new?category=q-a) for setup and troubleshooting help.
-- **Email** — [sanidhyyy@gmail.com](mailto:sanidhyyy@gmail.com)
-- **Discord** — `@sanidhyy`
+The easiest way is [Vercel](https://vercel.com): import this repository, keep the defaults
+(Next.js and pnpm are detected automatically) and click **Deploy**. No environment variables are required.
 
-## :camera: Screenshots:
+## 🙏 Credits
 
-![Modern UI/UX](/.github/images/img1.png "Modern UI/UX")
+This project started from the MIT-licensed
+[space-portfolio](https://github.com/sanidhyy/space-portfolio) template by Sanidhya Kumar Verma
+(its black-hole hero, starfield and base layout). Everything else — content, case-study pages,
+3D scenes, contact section, footer and the Devin explainer — was built on top of it.
 
-![Showcase your skills](/.github/images/img2.png "Showcase your skills")
+The `/devin` page summarises the official documentation of
+[Devin](https://docs.devin.ai/), [Claude Code](https://code.claude.com/docs/en/overview) and
+[GitHub Copilot](https://docs.github.com/en/copilot). It is an independent, personal write-up and is
+not affiliated with Cognition, Anthropic or GitHub.
 
-![Built with Typescript](/.github/images/img3.png "Built with Typescript")
+## 📬 Contact
 
-![Showcase your projects](/.github/images/img4.png "Showcase your projects")
+I'm open to suggestions, project ideas and any sort of collaboration.
 
-## :gear: Tech Stack
+- **Email:** [saithejapapisetty@gmail.com](mailto:saithejapapisetty@gmail.com)
+- **GitHub:** [@SaiTheja529](https://github.com/SaiTheja529)
 
-[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![Typescript](https://skillicons.dev/icons?i=ts "Typescript")](https://www.typescriptlang.org/ "Typescript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify") [![Three.js](https://skillicons.dev/icons?i=threejs "Three.js")](https://threejs.org/ "Three.js")
+## 📄 License
 
-## :wrench: Stats
-
-[![Stats for Space Portfolio](/.github/images/stats.svg "Stats for Space Portfolio")](https://pagespeed.web.dev/analysis/https-spaceportfolio-netlify-app/2efbmg117d "Stats for Space Portfolio")
-
-## :raised_hands: Contribute
-
-You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
-
-## :gem: Acknowledgements
-
-Useful resources and dependencies that are used in Space Portfolio.
-
-<!--- DEPENDENCIES_START --->
-- [@heroicons/react](https://www.npmjs.com/package/@heroicons/react): ^2.2.0
-- [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.9
-- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.8.2
-- [@types/node](https://www.npmjs.com/package/@types/node): ^26
-- [@types/react](https://www.npmjs.com/package/@types/react): ^19
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19
-- [@types/three](https://www.npmjs.com/package/@types/three): ^0.187.0
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.6.2
-- [clsx](https://www.npmjs.com/package/clsx): ^2.1.1
-- [eslint](https://www.npmjs.com/package/eslint): ^10.15.0
-- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.4.6
-- [framer-motion](https://www.npmjs.com/package/framer-motion): ^14.14.0
-- [maath](https://www.npmjs.com/package/maath): ^0.10.8
-- [next](https://www.npmjs.com/package/next): 16.4.6
-- [postcss](https://www.npmjs.com/package/postcss): ^8
-- [react](https://www.npmjs.com/package/react): 19.3.1
-- [react-dom](https://www.npmjs.com/package/react-dom): 19.3.1
-- [react-icons](https://www.npmjs.com/package/react-icons): ^5.7.0
-- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer): ^11.0.1
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.6.0
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
-- [three](https://www.npmjs.com/package/three): ^0.187.0
-- [typescript](https://www.npmjs.com/package/typescript): ^6
-
-<!--- DEPENDENCIES_END --->
-
-## :coffee: Buy Me a Coffee
-
-[<img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" width="200" />](https://www.buymeacoffee.com/sanidhy "Buy me a Coffee")
-
-## :rocket: Follow Me
-
-[![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fx.com%2F_sanidhyy)](https://x.com/intent/tweet?text=Check+out+this+amazing+app:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2Fspace-portfolio "Tweet")
-
-## :books: Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## :page_with_curl: Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## :star: Give A Star
-
-You can also give this repository a star to show more people and they can use this repository.
-
-## :star2: Star History
-
-<a href="https://star-history.com/#sanidhyy/space-portfolio&Timeline">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sanidhyy/space-portfolio&type=Timeline&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sanidhyy/space-portfolio&type=Timeline" />
-  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sanidhyy/space-portfolio&type=Timeline" />
-</picture>
-</a>
-
-<br />
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[MIT](LICENSE) — original template © 2024 Sanidhya Kumar Verma; modifications © 2026 Sai Theja Papisetty.
